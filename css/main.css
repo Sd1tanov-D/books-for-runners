@@ -2,40 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: bisque;
 }
 
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
-    align-content: center;
-    /* border: 2px solid red; */
 }
 
-.box {
-    max-width: 1000px;
+.content-box {
+    max-width: 1030px;
     margin: auto;
-    display: flex;
-    align-content: center;
-    /* flex-wrap: wrap; */
-    /* border: 2px solid red; */
-
-
 }
 
 .books {
     display: flex;
     flex-wrap: wrap;
-    /* border: 2px solid red; */
     justify-content: center;
-
-
 }
 
-.run, .greece, .magic, .book_title, .book_info {
-    width: 300px;
+.box {
+    width: 320px;
     height: 200px;
-    margin: 10px;
-    border: 2px solid red;
+    margin: 7px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
 }
+
+.books_cover {
+    width: 160px;
+    height: 200px;
+}
+
+.top_box {
+    background: yellow;
+}
+
+.center_box {
+    background: aqua ;
+    font-size: 18px;
+}
+
+.bottom_box {
+    background: rgb(43, 226, 125);
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 
