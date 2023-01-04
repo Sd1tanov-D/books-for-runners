@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    background: bisque;
+}
+
 .container {
-    max-width: 1000px;
+    max-width: 1030px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -13,31 +21,47 @@
 }
 
 .books {
-    flex-basis: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-
-.boxes{
-    width: 300px;
+.box{
+    width: calc(100% / 3 - 14px);
     height: 200px;
-    margin: 10px;
-    padding: 0 8px;
-    border: 2px solid red;
+    margin: 7px;
+    padding: 12px 8px;
 }
 
+.top_box{
+    background: yellow;
+}
+
+.center_box {
+    font-size: 18px;
+    background: aqua ;
+}
+
+.bottom_box {
+    font-size: 14px;
+    background: #2be27d;
+}
+
+.books_cover{
+    width: 160px;
+    height: auto;
+}
 
 @media screen and (max-width: 1000px) {
-    .boxes{
-        width: calc(100% / 2 - 20px);
+    .box{
+        width: calc(100% / 2 - 14px);
     }
 }
 
 
 @media screen and (max-width: 768px) {
-    .boxes{
-        width: calc(100% - 20px);
+    .box{
+        width: calc(100% - 14px);
     }
 }
