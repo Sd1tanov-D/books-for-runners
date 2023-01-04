@@ -28,8 +28,12 @@ a{
 }
 
 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100% / 3 - 14px);
-    height: 200px;
+    min-height: 220px;
+    height: auto;
     margin: 7px;
     padding: 12px 8px;
 }
@@ -40,7 +44,7 @@ a{
 
 .center_box {
     font-size: 18px;
-    background: aqua ;
+    background: aqua;
 }
 
 .bottom_box {
@@ -49,19 +53,31 @@ a{
 }
 
 .books_cover{
+    display: inline-flex;
+    flex: 0 0 auto;
     width: 160px;
-    height: auto;
+    height: 200px;
+    object-fit: fill;
 }
+
+
 
 @media screen and (max-width: 1000px) {
     .box{
-        width: calc(100% / 2 - 14px);
+        width: calc(100% / 3 - 14px);
     }
 }
 
 
 @media screen and (max-width: 768px) {
     .box{
+        width: calc(100% / 2 - 14px);
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .box {
         width: calc(100% - 14px);
     }
 }
