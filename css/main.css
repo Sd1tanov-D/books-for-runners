@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -9,14 +12,15 @@ body {
     background: bisque;
 }
 
-.container {
+.wrapper {
+    display: flex;
     width: 100%;
     height: 100vh;
-    display: flex;
 }
 
-.content-box {
+.container {
     max-width: 1030px;
+    width: 100%;
     margin: auto;
 }
 
@@ -27,20 +31,15 @@ body {
 }
 
 .box {
-    width: 320px;
-    height: 200px;
-    margin: 7px;
-    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 320px;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    margin: 7px;
     padding: 10px;
-
-}
-
-.books_cover {
-    width: 160px;
-    height: 200px;
 }
 
 .top_box {
@@ -48,15 +47,19 @@ body {
 }
 
 .center_box {
-    background: aqua ;
     font-size: 18px;
+    background: aqua ;
 }
 
 .bottom_box {
-    background: rgb(43, 226, 125);
     font-size: 14px;
     text-align: center;
-    vertical-align: middle;
+    background: rgb(43, 226, 125);
+}
+
+.books_cover {
+    width: 160px;
+    height: 200px;
 }
 
 
