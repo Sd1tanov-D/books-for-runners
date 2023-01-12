@@ -9,7 +9,7 @@ a {
 }
 
 body {
-    background: bisque;
+    background: #ffe4c4;
 }
 
 .wrapper {
@@ -34,27 +34,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 320px;
-    width: 100%;
-    min-height: 200px;
-    height: auto;
+    width: 320px;
+    min-height: 220px;
+    /* height: auto; */
     margin: 7px;
     padding: 10px;
 }
 
 .top_box {
-    background: yellow;
+    background: #ffff00;
 }
 
 .center_box {
     font-size: 18px;
-    background: aqua ;
+    background: #00ffff ;
 }
 
 .bottom_box {
     font-size: 14px;
     text-align: center;
-    background: rgb(43, 226, 125);
+    background: #2be27d;
 }
 
 .books_cover {
